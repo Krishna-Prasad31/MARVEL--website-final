@@ -1,0 +1,67 @@
+.marquee-section {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.marquee-track {
+  display: flex;
+  animation: marquee 25s linear infinite;
+  width: max-content;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 40px;
+  font-family: 'Clash Display', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.marquee-item:hover {
+  color: var(--text);
+}
+
+.marquee-dot {
+  color: var(--accent);
+  font-size: 16px;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 600px) {
+
+  .marquee-section {
+    padding: 14px 0;
+  }
+
+  .marquee-track {
+    animation-duration: 35s; /* slower = smoother */
+  }
+
+  .marquee-item {
+    padding: 0 20px;
+    font-size: 11px;
+    gap: 10px;
+  }
+
+  .marquee-dot {
+    font-size: 12px;
+  }
+}

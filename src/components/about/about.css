@@ -1,0 +1,156 @@
+.about {
+  background: var(--surface);
+  padding: 120px 60px;
+}
+
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+
+.about-visual {
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.about-box-main {
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-watermark {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 260px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.03);
+  letter-spacing: -0.05em;
+  user-select: none;
+  line-height: 1;
+  width: 3em;
+}
+
+.about-badge-year {
+  position: absolute;
+  top: 40px;
+  left: -24px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 16px 24px;
+  font-size: 13px;
+  color: var(--muted);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.about-badge-year strong {
+  display: block;
+  font-family: 'Clash Display', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #47c8ff;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.about-badge-location {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  background: var(--accent);
+  color: #000;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+}
+
+.section-tag {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.section-tag::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.section-title {
+  font-family: 'Clash Display', sans-serif;
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  color: var(--text);
+  margin-bottom: 32px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--muted);
+  font-weight: 300;
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 16px;
+}
+
+.about-content p strong {
+  color: var(--text);
+  font-weight: 400;
+}
+
+.about-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.pill {
+  padding: 8px 18px;
+  border: 1px solid var(--border);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.pill:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 80px 24px;
+  }
+
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-visual {
+    display: none;
+  }
+}

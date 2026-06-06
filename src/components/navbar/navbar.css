@@ -1,0 +1,157 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: var(--bg);
+  --surface: var(--surface);
+  --border: rgba(255,255,255,0.07); 
+  --text: var(--text);
+  --muted: var(--muted);
+  --accent: var(--accent);
+}
+
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 24px 60px;
+  display: flex;
+  align-items: center;
+   background: rgba(5,5,5,0.35);
+  backdrop-filter: blur(10px);
+  justify-content: space-between;
+  border-bottom: 1px solid transparent;
+  transition: all 0.4s;
+}
+
+
+.navbar.scroll {
+  background: rgba(5,5,5,0.92);
+  backdrop-filter: blur(20px);
+  border-bottom-color: var(--border);
+  padding: 16px 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--text); }
+
+.nav-cta {
+  background: var(--accent);
+  color: white;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 24px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.nav-cta:hover { 
+  background: #fff; 
+  color: black;
+}
+
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+   background-color: aliceblue;
+}
+
+.sunMoon{
+  height: 20px;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .nav-links {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .navbar {
+    padding: 14px 16px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    display: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+}

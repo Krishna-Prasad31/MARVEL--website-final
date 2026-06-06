@@ -1,0 +1,105 @@
+.join {
+  background: #e8ff47;
+  padding: 120px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.join-bg {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.join-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.join-title {
+  font-family: 'Clash Display', sans-serif;
+  font-size: clamp(56px, 8vw, 110px);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  color: #000;
+}
+
+.join-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(0,0,0,0.6);
+  max-width: 340px;
+  margin-bottom: 40px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.join-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #000;
+  color: #e8ff47;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 18px 36px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.join-btn:hover { background: #111; }
+
+.join-btn-arrow {
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.join-btn:hover .join-btn-arrow {
+  transform: translateX(4px);
+}
+
+@media (max-width: 600px) {
+
+  .join { 
+    padding: 80px 20px;
+  }
+
+  .join-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .join-title {
+    font-size: clamp(42px, 10vw, 64px);
+    color: #000000;
+  }
+
+  .join-right {
+    width: 100%;
+  }
+
+  .join-desc {
+    max-width: 100%;
+    font-size: 14px;
+    margin-bottom: 24px;
+    color: rgba(0,0,0,0.6);
+  }
+
+  .join-btn {
+    padding: 14px 24px;
+    font-size: 12px;
+  }
+
+  .join-btn-arrow {
+    font-size: 14px;
+  }
+}
