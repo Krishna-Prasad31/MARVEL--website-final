@@ -9,15 +9,15 @@ import ESP from "../../assets/tools-svgrepo-com.svg"
 
 const tracks = [
   {
-    num: '01',
+    num: '1',
     icon: BTH,
     name: 'Student Track',
     desc: 'A structured batch program with hands-on curriculum. Applications open twice a year. Learn with a cohort of like-minded students.',
-    color: '#e8ff47',
+    color: '#16A34A',
     link: 'https://hub.uvcemarvel.in'
   },
   {
-    num: '02',
+    num: '2',
     icon: PJT,
     name: 'Project Track',
     desc: 'Project Track provides UVCE students with the Marvel resources and facilities needed to turn project abstracts into reality.',
@@ -25,7 +25,7 @@ const tracks = [
     link: 'https://forms.gle/aiD3WWXUBngknHzX9'
   },
   {
-    num: '03',
+    num: '3',
     icon: COMP,
     name: 'Competition Track',
     desc: 'MARVEL supports students participating in technical competitions — financial assistance, mentorship and guidance.',
@@ -33,15 +33,15 @@ const tracks = [
     link: 'https://forms.gle/Ds6EoHK7iYt6Ki6NA'
   },
   {
-    num: '04',
+    num: '4',
     icon: RSH,
     name: 'Research Track',
     desc: 'Structured guidance for students exploring research — problem formulation, literature review, methodology and academic writing.',
-    color: '#47ff8f',
+    color: '#0F766E',
     link: 'https://forms.gle/59c6WxZxXQ3naC9f8'
   },
   {
-    num: '05',
+    num: '5',
     icon: OLP,
     name: 'Open Learner Programme',
     desc: 'Access any MARVEL course at your own pace. Complete coursework and earn a certificate highlighting your achievement.',
@@ -49,7 +49,7 @@ const tracks = [
     link: 'https://forms.gle/QCdFiTSu5K6hyysq5'
   },
   {
-    num: '06',
+    num: '6',
     icon: ESP,
     name: 'Equipment Support',
     desc: 'Lab Access provides non-MARVEL students with the equipment and components needed to start building immediately after a quick form submission.',

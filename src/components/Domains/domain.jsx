@@ -20,7 +20,7 @@ const domains = [
     num: '2', svg: EVRE,
     name: "Electric Vehicles and Renewable Energy",
     des: "Learn how sustainable energy and electric mobility are shaping the future of transportation and power systems.",
-    color: '#e8ff47',
+    color: '#16A34A',
     link: 'https://hub.uvcemarvel.in/course/EV-RE-001'
   },
   {
@@ -34,7 +34,7 @@ const domains = [
     num: '4', svg: IoT,
     name: "Internet of Things",
     des: "Discover how everyday devices become smart by connecting to the internet and exchanging data.",
-    color: '#47ff8f',
+    color: '#0F766E',
     link: 'https://hub.uvcemarvel.in/course/IOT-001'
   },
   {
