@@ -55,7 +55,7 @@ const tracks = [
     num: '6',
     icon: ESP,
     name: 'Equipment Support',
-    desc: 'Lab Access provides MARVEL students with the equipment and components needed to start building immediately after a quick form submission.',
+    desc: 'Lab Access provides MARVEL students with the equipment and components needed to start building after a quick form submission.',
     color: '#ff6b6b',
     link: 'https://forms.gle/CgAEdANBq3R17sdQA'
   },
