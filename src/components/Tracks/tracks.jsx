@@ -5,6 +5,9 @@ import COMP from "../../assets/badge-svgrepo-com.svg"
 import RSH from "../../assets/research-svgrepo-com.svg"
 import OLP from "../../assets/book-svgrepo-com.svg"
 import ESP from "../../assets/tools-svgrepo-com.svg"
+import BRI from '../../assets/BRIDGE.svg'
+import AWS from '../../assets/AWS.svg'
+import BOT from '../../assets/BotWorks.svg'
 
 
 const tracks = [
@@ -54,6 +57,30 @@ const tracks = [
     name: 'Equipment Support',
     desc: 'Lab Access provides non-MARVEL students with the equipment and components needed to start building immediately after a quick form submission.',
     color: '#ff6b6b',
+    link: 'https://forms.gle/CgAEdANBq3R17sdQA'
+  },
+  {
+    num: '7',
+    icon: BRI,
+    name: 'BRIDGE',
+    desc: 'A startup initiative at MARVEL UVCE in collaboration with E-Cell, helping students build ventures through mentorship, innovation, and entrepreneurship.',
+    color: '#F0652F',
+    link: 'https://forms.gle/CgAEdANBq3R17sdQA'
+  },
+  {
+    num: '8',
+    icon: AWS,
+    name: 'AWS Student Builder Group',
+    desc: 'A student-led AWS community at MARVEL UVCE empowering students through cloud workshops, hands-on projects, certifications, and industry collaboration.',
+    color: '#FFA500 ',
+    link: 'https://forms.gle/CgAEdANBq3R17sdQA'
+  },
+  {
+    num: '9',
+    icon: BOT,
+    name: 'BotWorks',
+    desc: 'A robotics initiative at MARVEL UVCE focused on building autonomous bots and preparing students for robotics competitions.',
+    color: '#0F172A',
     link: 'https://forms.gle/CgAEdANBq3R17sdQA'
   },
 ]
