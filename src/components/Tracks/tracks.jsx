@@ -55,7 +55,7 @@ const tracks = [
     num: '6',
     icon: ESP,
     name: 'Equipment Support',
-    desc: 'Lab Access provides non-MARVEL students with the equipment and components needed to start building immediately after a quick form submission.',
+    desc: 'Lab Access provides MARVEL students with the equipment and components needed to start building immediately after a quick form submission.',
     color: '#ff6b6b',
     link: 'https://forms.gle/CgAEdANBq3R17sdQA'
   },
@@ -79,7 +79,7 @@ const tracks = [
     num: '9',
     icon: BOT,
     name: 'BotWorks',
-    desc: 'A robotics initiative at MARVEL UVCE focused on building autonomous bots and preparing students for robotics competitions.',
+    desc: 'A robotics initiative at MARVEL UVCE focused on building manual/autonomous bots and preparing students for robotics competitions.',
     color: '#0F172A',
     link: 'https://forms.gle/CgAEdANBq3R17sdQA'
   },
